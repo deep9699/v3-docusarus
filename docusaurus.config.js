@@ -148,6 +148,7 @@ const config = {
         isCloseable: false,
       },
     }),
+  clientModules: ["./analytics.js"],
 
   plugins: [
     [
