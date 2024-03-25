@@ -24,3 +24,11 @@ jobs:
 
       - name: Run Build
         run: npm run build
+
+      - name: Cache Docusaurus build
+        uses: actions/cache@v2
+        with:
+          path: build
+          key: ${{ runner.os }}-build-${{ hashFiles('build/**') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
