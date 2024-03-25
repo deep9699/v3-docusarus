@@ -22,13 +22,19 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Restore Cache Build
+        uses: actions/cache/restore@v3
+        id: restore-cache-build
+        with:
+          path: node_modules/.cache
+          key: build-cache
+
       - name: Run Build
         run: npm run build
 
-      - name: Cache Docusaurus build
-        uses: actions/cache@v2
+      - name: Cache Build
+        id: cache-build
+        uses: actions/cache@v3
         with:
-          path: build
-          key: ${{ runner.os }}-build-${{ hashFiles('build/**') }}
-          restore-keys: |
-            ${{ runner.os }}-build-
+          path: node_modules/.cache
+          key: build-cache
