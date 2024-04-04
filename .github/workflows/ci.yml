@@ -33,7 +33,7 @@ jobs:
         run: npm run build
 
       - name: Copy Test Folder
-        run: cp -r Test-copy build
+        run: cp -r ./Test-copy ./build
 
       - name: List All files
         run: ls -a
