@@ -35,8 +35,11 @@ jobs:
       - name: Copy Test Folder
         run: cp -r ./Test-copy ./build
 
-      - name: List All files
+      - name: List Build files
         run: ls -a ./build
+
+      - name: List Test Copy files
+        run: ls -a ./build/Test-copy
 
       - name: Cache Build
         id: cache-build
