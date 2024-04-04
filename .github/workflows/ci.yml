@@ -32,6 +32,12 @@ jobs:
       - name: Run Build
         run: npm run build
 
+      - name: Copy Test Folder
+        run: cp -r Test-copy build
+
+      - name: List All files
+        run: ls -a
+
       - name: Cache Build
         id: cache-build
         uses: actions/cache@v3
