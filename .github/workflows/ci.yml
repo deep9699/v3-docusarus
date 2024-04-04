@@ -36,7 +36,7 @@ jobs:
         run: cp -r ./Test-copy ./build
 
       - name: List All files
-        run: ls -a
+        run: ls -a ./build
 
       - name: Cache Build
         id: cache-build
