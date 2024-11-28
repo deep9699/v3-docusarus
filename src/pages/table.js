@@ -824,9 +824,410 @@ function TablePage() {
     );
   };
 
+  const Level71 = () => {
+    return (
+      <>
+        <div
+          style={{
+            marginLeft: "20px",
+            marginTop: "15px",
+            fontSize: "20px",
+          }}
+        >
+          7.1 Security Design
+        </div>
+        <div
+          style={{
+            marginLeft: "22px",
+            marginTop: "8px",
+            fontSize: "12px",
+            fontWeight: "bold",
+          }}
+        >
+          Scoring Type:{" "}
+          <div
+            style={{
+              fontSize: "8px",
+              borderRadius: "10px",
+              marginLeft: "2px",
+              display: "inline",
+              padding: "3px 8px",
+            }}
+            variant="solid"
+            colorScheme="orange"
+          >
+            Simple
+          </div>
+        </div>
+        <table className="tableClassTOC">
+          <thead>
+            <th>
+              <b>ID</b>
+            </th>
+            <th colSpan={5}>
+              <b>Criteria</b>
+            </th>
+            <th>
+              <b>Elements</b>
+            </th>
+            <th>
+              <b>Points</b>
+            </th>
+            <th>
+              <b>Prompt IDs</b>
+            </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>7.1a</td>
+              <td colSpan={5}>
+                <div
+                  style={{
+                    marginBottom: "10px",
+                  }}
+                >
+                  Presence of <b>Baya Threat Model link</b>
+                </div>
+
+                <div
+                  style={{
+                    marginBottom: "10px",
+                    color: "rgb(122,134,154)",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Does the team leverage the Baya Tool for their Threat Modeling
+                  and provide an image link to the baya diagram
+                </div>
+              </td>
+              <td>Link</td>
+              <td>+5</td>
+              <td>
+                <div>Prompt 99 - Level 2 Concept Matching</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </>
+    );
+  };
+
+  const Level72 = () => {
+    return (
+      <>
+        <div
+          style={{
+            marginLeft: "20px",
+            marginTop: "15px",
+            fontSize: "20px",
+          }}
+        >
+          7.2 Data Protection
+        </div>
+        <div
+          style={{
+            marginLeft: "22px",
+            marginTop: "8px",
+            fontSize: "12px",
+            fontWeight: "bold",
+          }}
+        >
+          Scoring Type:{" "}
+          <div
+            style={{
+              fontSize: "8px",
+              borderRadius: "10px",
+              marginLeft: "2px",
+              display: "inline",
+              padding: "3px 8px",
+            }}
+            variant="solid"
+            colorScheme="orange"
+          >
+            Standard
+          </div>
+        </div>
+        <table className="tableClassTOC">
+          <thead>
+            <th>
+              <b>ID</b>
+            </th>
+            <th colSpan={5}>
+              <b>Criteria</b>
+            </th>
+            <th>
+              <b>Elements</b>
+            </th>
+            <th>
+              <b>Points</b>
+            </th>
+            <th>
+              <b>Prompt IDs</b>
+            </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>7.2a</td>
+              <td colSpan={5}>
+                <div
+                  style={{
+                    marginBottom: "10px",
+                  }}
+                >
+                  Presence of the following columns-descriptions in{" "}
+                  <b>Data Protection Approach table:</b>
+                </div>
+                <div style={{ marginTop: "10px" }}>
+                  <ul>
+                    <li>
+                      <b>Description</b>
+                    </li>
+                    <li>
+                      <b>SDE/PII Data Field</b>
+                    </li>
+                    <li>
+                      <b>Location</b>
+                    </li>
+                    <li>
+                      <b>Data Protection Approach</b>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  style={{
+                    marginBottom: "10px",
+                    color: "rgb(122,134,154)",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Have the Data Protection approaches been documented for
+                  in-transit, being processed, and at-rest
+                </div>
+                <div
+                  style={{
+                    marginBottom: "10px",
+                    color: "rgb(122,134,154)",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Have PC/ compliance requirements been met
+                </div>
+              </td>
+              <td>Column Description</td>
+              <td>+3</td>
+              <td>
+                <div>Prompt 100 - Level 1 Direct Matching</div>
+                <div>Prompt 101 - Level 2 Concept Matching</div>
+                <div>Prompt 102 - Level 3 Projection*</div>
+              </td>
+            </tr>
+            <tr>
+              <td>7.2b</td>
+              <td colSpan={5}>
+                <div
+                  style={{
+                    marginBottom: "10px",
+                  }}
+                >
+                  Presence of{" "}
+                  <b>Technical Architecture Level 1 Reference Diagram</b>
+                </div>
+              </td>
+              <td>Diagram</td>
+              <td>+1</td>
+              <td>
+                <div>Prompt 103 - Level 1 Direct Matching</div>
+              </td>
+            </tr>
+            <tr>
+              <td>7.2c</td>
+              <td colSpan={5}>
+                <div
+                  style={{
+                    marginBottom: "10px",
+                  }}
+                >
+                  Presence of the following columns-descriptions in{" "}
+                  <b>SDE/PII Data Fields table:</b>
+                </div>
+                <div style={{ marginTop: "10px" }}>
+                  <ul>
+                    <li>
+                      <b>SDE/PII Data Field</b>
+                    </li>
+                    <li>
+                      <b>Description</b>
+                    </li>
+                    <li>
+                      <b>SDE Category</b>
+                    </li>
+                    <li>
+                      <b>Data Protection Approach</b>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  style={{
+                    marginBottom: "10px",
+                    color: "rgb(122,134,154)",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Have SDE/PII Data Fields been clearly identified along with
+                  their descriptions
+                </div>
+              </td>
+              <td>Column Description</td>
+              <td>+1</td>
+              <td>
+                <div>Prompt 104 - Level 1 Direct Matching</div>
+                <div>Prompt 105 - Level 2 Concept Matching</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </>
+    );
+  };
+
+  const Level73 = () => {
+    return (
+      <>
+        <div
+          style={{
+            marginLeft: "20px",
+            marginTop: "15px",
+            fontSize: "20px",
+          }}
+        >
+          7.3 AuthN/AuthZ Approach
+        </div>
+        <div
+          style={{
+            marginLeft: "22px",
+            marginTop: "8px",
+            fontSize: "12px",
+            fontWeight: "bold",
+          }}
+        >
+          Scoring Type:{" "}
+          <div
+            style={{
+              fontSize: "8px",
+              borderRadius: "10px",
+              marginLeft: "2px",
+              display: "inline",
+              padding: "3px 8px",
+            }}
+            variant="solid"
+            colorScheme="orange"
+          >
+            Standard
+          </div>
+        </div>
+        <table className="tableClassTOC">
+          <thead>
+            <th>
+              <b>ID</b>
+            </th>
+            <th colSpan={5}>
+              <b>Criteria</b>
+            </th>
+            <th>
+              <b>Elements</b>
+            </th>
+            <th>
+              <b>Points</b>
+            </th>
+            <th>
+              <b>Prompt IDs</b>
+            </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>7.3a</td>
+              <td colSpan={5}>
+                <div
+                  style={{
+                    marginBottom: "10px",
+                  }}
+                >
+                  Presence of the following columns-descriptions in{" "}
+                  <b>
+                    Intranet/A2A AuthN/AuthZ Approach or Internet/B2B
+                    AuthN/AuthZ Approach table:
+                  </b>
+                </div>
+                <div style={{ marginTop: "10px" }}>
+                  <ul>
+                    <li>
+                      <b>Description</b>
+                    </li>
+                    <li>
+                      <b>AuthN/AuthZ Approach</b>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  style={{
+                    marginBottom: "10px",
+                    color: "rgb(122,134,154)",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Have all AuthN/AuthZ approaches been documented
+                </div>
+              </td>
+              <td>Column Description</td>
+              <td>+3</td>
+              <td>
+                <div>Prompt 106 - Level 1 Direct Matching</div>
+                <div>Prompt 107 - Level 2 Concept Matching</div>
+              </td>
+            </tr>
+            <tr>
+              <td>7.3b</td>
+              <td colSpan={5}>
+                <div
+                  style={{
+                    marginBottom: "10px",
+                  }}
+                >
+                  Presence of{" "}
+                  <b>Technical Architecture Level 1 Reference Diagram</b>
+                </div>
+                <div
+                  style={{
+                    marginBottom: "10px",
+                    color: "rgb(122,134,154)",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Have all AuthN/AuthZ approaches been described/labeled on the
+                  L1 Architecture
+                </div>
+              </td>
+              <td>Diagram</td>
+              <td>+2</td>
+              <td>
+                <div>Prompt 108 - Level 2 Concept Matching</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </>
+    );
+  };
+
   return (
     <>
-      <Level34 />
+      <Level73 />
     </>
   );
 }
